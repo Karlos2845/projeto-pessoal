@@ -2,17 +2,12 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    color:aquamarine
+background-color: black  
+
 }
   
-   body{
-     font-family: Arial, sans-serif;
-     line-height: 1.6;
-     background-color: black
-     color:aquamarine:
-     padding: 20px
-     }
-
 header {
     background: #020202;
     color: #2a3ab5c4;
