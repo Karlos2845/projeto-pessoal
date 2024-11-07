@@ -72,14 +72,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-/* Mudar a fonte do código exibido no GitHub */
-.highlight pre, .blob-code-inner {
-    font-family: 'Fira Code', 'Courier New', monospace !important;
-    font-size: 14px;  /* Você pode ajustar o tamanho da fonte se preferir */
-}
-
-/* Mudar a fonte do texto geral no GitHub */
-body, .markdown-body {
-    font-family: 'Arial', sans-serif !important;  /* Altere para qualquer fonte que desejar */
-}
