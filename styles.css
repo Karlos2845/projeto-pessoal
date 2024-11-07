@@ -25,10 +25,10 @@ h1, h2 {
 }
 
 .profile-photo {
-    width: 150px;
-    height: auto;
-    border-radius: 75px;
-    margin-top: 10px;
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 .music, .videos, .recommendations {
