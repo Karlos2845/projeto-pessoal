@@ -64,8 +64,8 @@ video-container iframe {
 }
 
 footer {
-    background: #7f7c7c;
-    color: hsl(222, 57%, 74%);
+    background: #040404;
+    color: hsla(169, 68%, 53%, 0.768);
     text-align: center;
     padding: 10px 0;
     position: relative;
