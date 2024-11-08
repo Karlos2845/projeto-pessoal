@@ -10,7 +10,7 @@ background-color: black
   
 header {
     background: #020202;
-    color: #2a3ab5c4;
+    color: #e8e9f2c4;
     padding: 10px 0;
     text-align: center;
 }
@@ -64,7 +64,7 @@ video-container iframe {
 }
 
 footer {
-    background: #211f1f;
+    background: #7f7c7c;
     color: hsl(222, 57%, 74%);
     text-align: center;
     padding: 10px 0;
