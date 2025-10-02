@@ -1,78 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Apresentação</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmácia Vida+ - Sua Farmácia de Confiança</title>
+  <link rel="stylesheet" href="styless.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <h1>Olá, meu nome é Karlos </h1>
-    </header>
-
-    <section class="about">
-        <h2>Sobre Mim</h2>
-        <p>Meu nome é Karlos Eduardo tenho 16 anos estudo na escola João Pires de Camargo e sou aluno do professor Hugo Duro que é o meu professor de robótica. </p>
-        <img src="carrosselcorinthians.webp" class="profile-photo">
-    </section>
-
-    <section class="music">
-        <h2>Músicas que eu gosto</h2>
-        <ul>
-            <iframe src="https://open.spotify.com/embed/track/77TElJdpImw8cSv6t4mCIr?utm_source=generator"                    width="70%" height="152" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-
-                    <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/2xs2TwrlfamtW0DQqId0M5?utm_source=generator"
-                    width="70%" height="152" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-                
-         <iframe style="border-radius:12px"
-         src="https://open.spotify.com/embed/track/0bGdfmQBwZpXzDfTzeNh08?utm_source=generator"
-          width="70%" height="152" frameBorder="0" allowfullscreen=""
-         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
-
-
-
-                
-                <a href="https://www.youtube.com/embed/8jX1IWc8yIg?si=QpXExB3PpTjPraCJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </a>
-            </li>
+  <header class="site-header" aria-label="Cabeçalho principal">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        Farmácia Vida+ <span class="tagline" aria-label="Slogan">Saúde para você</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <section class="videos">
-        <h2>Vídeos que eu gosto</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/8M8P2MKM2Cw?si=WTwb7L90mCxo5hLa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/awh1I_90AAk?si=UX7hyWiUJ8yvohQi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/9Yq_-cRVrc4?si=cITb8z-h2OPP-Aup" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/AmHGiPx-s5o?si=3IS7YH2f6DTUOz9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/1gi1xOhw6XA?si=e9coN4kdTP2LSPky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <section class="hero container" id="inicio" role="region" aria-label="Banner principal">
+    <h1>Cuidados farmacêuticos com rapidez e confiança</h1>
+    <p>Medicamentos, perfumaria, exames e entregas em domicílio com qualidade e preço justo.</p>
+    <a href="#contato" class="btn">Fale Conosco</a>
+  </section>
+
+  <section class="section container" id="servicos" aria-label="Serviços">
+    <h2>Nossos serviços</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Dispensação de Medicamentos</h3>
+        <p>Prescrição, orientação de uso e segurança do paciente.</p>
+      </div>
+      <div class="card">
+        <h3>Aconselhamento Farmacêutico</h3>
+        <p>Informação clara sobre interação e efeitos colaterais.</p>
+      </div>
+      <div class="card">
+        <h3>Entrega Domiciliar</h3>
+        <p>Entrega rápida em todo o bairro e região.</p>
+      </div>
+      <div class="card">
+        <h3>Consultas de Saúde</h3>
+        <p>Avaliação breve de saúde e orientação de bem-estar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="produtos" aria-label="Produtos">
+    <h2>Produtos em destaque</h2>
+    <div class="product-grid">
+      <div class="product">
+        <strong>Vitaminas</strong>
+        <p>Suplementos para seu dia a dia</p>
+      </div>
+      <div class="product">
+        <strong>Higiene</strong>
+        <p>Produtos de cuidado pessoal</p>
+      </div>
+      <div class="product">
+        <strong>Dermocosméticos</strong>
+        <p>Cuidados com a pele</p>
+      </div>
+      <div class="product">
+        <strong>Contraceptivos</strong>
+        <p>Opções seguras e orientadas</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="contato" aria-label="Contato">
+    <h2>Contato</h2>
+    <form class="contact" action="#" method="post" aria-label="Formulário de contato">
+      <div class="grid">
+        <div>
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" class="input" type="text" required />
         </div>
-    </section>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" class="input" type="email" required />
+        </div>
+      </div>
+      <div style="margin-top:12px;">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" class="textarea" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn" style="margin-top:12px;">Enviar</button>
+    </form>
+  </section>
 
-    <section class="recommendations">
-        <h2>Recomendações de Sites para Estudo</h2>
-        <ul>
-            <li><a href="https://repositorio.educacao.sp.gov.br/">centro de mídia</a>.</li>
-            <li><a href="https://leiasp.odilo.us/">leiasp</a>.</li>
-            <li><a href="https://cursos.alura.com.br/dashboard">Alura</a>.</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Agradecimento ao professor Hugo Duro.</p>
-    </footer>
-
+  <footer class="section container" aria-label="Rodapé">
+    <p>&copy; 2025 Farmácia Vida+. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
-
