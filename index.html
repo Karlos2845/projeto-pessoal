@@ -1,102 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farmácia Vida+ - Sua Farmácia de Confiança</title>
-  <link rel="stylesheet" href="styless.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PharmaFuture</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header" aria-label="Cabeçalho principal">
-    <div class="container header-inner">
-      <a class="logo" href="#">
-        Farmácia Vida+ <span class="tagline" aria-label="Slogan">Saúde para você</span>
-      </a>
-      <nav aria-label="Navegação principal">
-        <ul class="nav-links">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="header">
+    <h1>🧬 PharmaFuture</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero container" id="inicio" role="region" aria-label="Banner principal">
-    <h1>Cuidados farmacêuticos com rapidez e confiança</h1>
-    <p>Medicamentos, perfumaria, exames e entregas em domicílio com qualidade e preço justo.</p>
-    <a href="#contato" class="btn">Fale Conosco</a>
+  <section class="hero">
+    <h2>Bem-vindo ao futuro da saúde</h2>
+    <p>Medicamentos, bem-estar e tecnologia ao seu alcance</p>
+    <button onclick="scrollToProdutos()">Ver Produtos</button>
   </section>
 
-  <section class="section container" id="servicos" aria-label="Serviços">
-    <h2>Nossos serviços</h2>
-    <div class="features">
+  <section id="produtos" class="produtos">
+    <h3>Produtos em Destaque</h3>
+    <div class="card-container">
       <div class="card">
-        <h3>Dispensação de Medicamentos</h3>
-        <p>Prescrição, orientação de uso e segurança do paciente.</p>
+        <h4>Paracetamol Neo</h4>
+        <p>R$ 19,90</p>
+        <button>Comprar</button>
       </div>
       <div class="card">
-        <h3>Aconselhamento Farmacêutico</h3>
-        <p>Informação clara sobre interação e efeitos colaterais.</p>
+        <h4>Vitaminas 3D</h4>
+        <p>R$ 29,90</p>
+        <button>Comprar</button>
       </div>
-      <div class="card">
-        <h3>Entrega Domiciliar</h3>
-        <p>Entrega rápida em todo o bairro e região.</p>
-      </div>
-      <div class="card">
-        <h3>Consultas de Saúde</h3>
-        <p>Avaliação breve de saúde e orientação de bem-estar.</p>
-      </div>
+      <!-- Adicione mais produtos -->
     </div>
   </section>
 
-  <section class="section container" id="produtos" aria-label="Produtos">
-    <h2>Produtos em destaque</h2>
-    <div class="product-grid">
-      <div class="product">
-        <strong>Vitaminas</strong>
-        <p>Suplementos para seu dia a dia</p>
-      </div>
-      <div class="product">
-        <strong>Higiene</strong>
-        <p>Produtos de cuidado pessoal</p>
-      </div>
-      <div class="product">
-        <strong>Dermocosméticos</strong>
-        <p>Cuidados com a pele</p>
-      </div>
-      <div class="product">
-        <strong>Contraceptivos</strong>
-        <p>Opções seguras e orientadas</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container" id="contato" aria-label="Contato">
-    <h2>Contato</h2>
-    <form class="contact" action="#" method="post" aria-label="Formulário de contato">
-      <div class="grid">
-        <div>
-          <label for="nome">Nome</label>
-          <input id="nome" name="nome" class="input" type="text" required />
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" class="input" type="email" required />
-        </div>
-      </div>
-      <div style="margin-top:12px;">
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" class="textarea" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn" style="margin-top:12px;">Enviar</button>
-    </form>
-  </section>
-
-  <footer class="section container" aria-label="Rodapé">
-    <p>&copy; 2025 Farmácia Vida+. Todos os direitos reservados.</p>
+  <footer class="footer">
+    <p>&copy; 2025 PharmaFuture. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>

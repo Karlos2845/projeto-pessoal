@@ -1,141 +1,114 @@
-
-Código: styless.css
-```css
-:root {
-  --brand: #0d6efd;
-  --brand-dark: #0a58ca;
-  --bg: #f7f9fc;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --card: #ffffff;
-  --border: #e5e7eb;
-  --accent: #12b886;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
 body {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-  color: var(--text);
-  background: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
   line-height: 1.6;
 }
 
-.container {
-  width: 92%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.site-header {
-  background: #fff;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.header-inner {
+.header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
-}
-
-.logo {
-  font-weight: 800;
-  color: var(--brand);
-  text-decoration: none;
-  font-size: 1.25rem;
-}
-.logo .tagline {
-  font-weight: 500;
-  color: var(--muted);
-  font-size: 0.85rem;
-  display: block;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+  gap: 1.5rem;
 }
+
 .nav-links a {
   text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
+  color: #00ffc3;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffaa;
 }
 
 .hero {
-  background: linear-gradient(135deg, #e7f0ff 0%, #ffffff 60%);
-  padding: 70px 0;
   text-align: center;
+  padding: 5rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
 }
-.hero h1 {
-  font-size: 2rem;
-  margin: 0 0 10px;
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #00ffc3;
 }
-.hero p {
-  color: var(--muted);
-  margin-bottom: 16px;
-}
-.btn {
-  display: inline-block;
-  padding: 12px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #fff;
-  background: var(--brand);
-  border: 0;
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #00ffc3;
+  border: none;
+  border-radius: 20px;
+  color: #000;
+  font-weight: bold;
   cursor: pointer;
-  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
-.section { padding: 40px 0; }
-.section h2 { font-size: 1.75rem; margin-bottom: 12px; }
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 16px;
-}
-.card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 16px;
+.hero button:hover {
+  background-color: #00ffaa;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 14px;
-}
-.product {
-  padding: 12px;
-  border: 1px solid #eee;
-  border-radius: 8px;
-  background: #fff;
+.produtos {
+  padding: 3rem 2rem;
   text-align: center;
 }
 
-.contact { background: #f8fafc; padding: 28px; border-radius: 8px; }
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
 
-.input, .textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 250px;
+  box-shadow: 0 0 15px #00ffc3;
+  transition: transform 0.3s;
 }
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
+
+.card:hover {
+  transform: scale(1.05);
 }
-@media (max-width: 800px) {
-  .nav-links { display: none; } /* simplificado para tela pequena */
-  .hero { padding: 40px 0; }
-  .grid { grid-template-columns: 1fr; }
+
+.card h4 {
+  margin-bottom: 0.5rem;
+  color: #00ffc3;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #00ffc3;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
 }
