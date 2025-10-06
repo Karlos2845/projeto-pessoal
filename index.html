@@ -3,47 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PharmaFuture</title>
+  <title>NeoPharma</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="header">
-    <h1>🧬 PharmaFuture</h1>
+  <header>
+    <div class="logo">⚕️ NeoPharma</div>
     <nav>
-      <ul class="nav-links">
+      <ul>
+        <li><a href="#home">Início</a></li>
         <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Bem-vindo ao futuro da saúde</h2>
-    <p>Medicamentos, bem-estar e tecnologia ao seu alcance</p>
-    <button onclick="scrollToProdutos()">Ver Produtos</button>
-  </section>
-
-  <section id="produtos" class="produtos">
-    <h3>Produtos em Destaque</h3>
-    <div class="card-container">
-      <div class="card">
-        <h4>Paracetamol Neo</h4>
-        <p>R$ 19,90</p>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <h4>Vitaminas 3D</h4>
-        <p>R$ 29,90</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Adicione mais produtos -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>O Futuro da Saúde Está Aqui</h1>
+      <p>Descubra uma farmácia moderna, acessível e inteligente</p>
+      <button onclick="scrollToSection('produtos')">Ver Produtos</button>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 PharmaFuture. Todos os direitos reservados.</p>
+  <section id="produtos" class="produtos">
+    <h2>🧪 Produtos em Destaque</h2>
+    <div class="produtos-container">
+      <div class="produto-card">
+        <h3>NeuroMax</h3>
+        <p>Suplemento neural avançado</p>
+        <span>R$ 89,90</span>
+        <button>Comprar</button>
+      </div>
+      <div class="produto-card">
+        <h3>VitaSkin+</h3>
+        <p>Regenerador celular dérmico</p>
+        <span>R$ 129,90</span>
+        <button>Comprar</button>
+      </div>
+      <div class="produto-card">
+        <h3>CardioTech</h3>
+        <p>Monitore seu coração em tempo real</p>
+        <span>R$ 399,90</span>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <h2>🔧 Serviços Inteligentes</h2>
+    <ul>
+      <li>📦 Entrega em até 2 horas via drone</li>
+      <li>💊 Prescrição médica digital</li>
+      <li>📱 App de acompanhamento de tratamentos</li>
+    </ul>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>📞 Fale Conosco</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NeoPharma. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
